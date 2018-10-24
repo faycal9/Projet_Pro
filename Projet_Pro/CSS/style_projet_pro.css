@@ -1,0 +1,201 @@
+body{
+    
+    margin:0;
+    
+}
+
+
+#wrapper{
+    
+    display:flex;
+    flex-direction: column;
+        
+    
+}
+
+#header{
+    
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    background: linear-gradient(#6e0b14,#850606);
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+header{
+    
+    top:0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}
+
+
+
+/* hyper important si on le met pas tout remonte et on voit plus rien, à cause du position fixed du header*/
+#main{
+    
+    margin-top: 50px;
+
+    
+}
+
+#header nav{
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+/* pour supprimer l'icon */
+.icon{
+    
+    display:none;
+}
+
+
+#header nav a{
+    
+    
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+
+
+#header nav a:hover{
+    
+    background: rgb(145, 40, 59);
+    
+    
+    
+}
+
+
+
+footer{
+    
+    bottom: 0;
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /*position: fixed;*/
+    color:blue;
+    background: linear-gradient(#6e0b14,#850606);
+    position: fixed;
+    color: white;
+}
+
+
+/* menu burger */
+
+
+
+
+
+
+/* ça c'est moi qui l'ai fait */
+@media screen and (max-width: 600px){
+    
+    #main.mymain{
+    
+    margin-top: 70px;
+
+    
+}
+    
+    
+    /*main responsive au click de la personne */
+    
+    
+    #main.mymain.responsive {
+        
+        margin-top:20px;
+        
+    }
+    
+    
+    
+    
+    #header nav a {
+        
+        display: none;
+    }
+    
+    .icon{
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        color: white;
+        text-decoration: none;
+        border: 1px solid white;
+        padding: 10px;
+        border-radius: 10%;
+    }
+    
+
+
+   .myburger.responsive{
+    
+        margin-top:90px;
+    
+    }
+    
+    
+    .myburger.responsive{
+    
+     background: linear-gradient(#6e0b14,#850606);
+     width: 100%;
+    
+    
+    
+    }
+    
+    .myburger.responsive nav  {
+
+    
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 10vh;
+    
+    }
+    
+    .myburger.responsive nav a{
+        
+        
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        
+    }
+    
+    #menu_burger.myburger.responsive nav a:hover{
+        
+        background: rgb(145, 40, 59);
+        
+    }
+    
+    
+
+    
+    
+    
+    
+    
+    
+}
+
